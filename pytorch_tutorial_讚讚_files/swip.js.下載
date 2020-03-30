@@ -1,0 +1,50 @@
+$( document ).ready(function() {
+  $('.moreCon').hide(); 
+  
+  $('.showMore a').on('click', function(){
+    var $span = $(this).parent().parent().parent().find('.moreCon');
+    var bool = $span.is(':visible');
+    $span.slideToggle(bool);
+  
+    if(bool){
+      $(this).css({
+        background: '#a79144'
+      }).text('我要回覆');
+    }
+    else{
+      $(this).css({
+        background: '#a79144'
+      }).text('取消回覆');
+    }
+  });
+  
+  $('.moreCon').hide(); 
+  
+  $('.showMore-R a').on('click', function(){
+    var $span = $(this).parent().parent().parent().find('.moreCon');
+    var bool = $span.is(':visible');
+    $span.slideToggle(bool);
+  
+    if(bool){
+      $(this).css({
+        background: 'url(../../images/index/icon_Show-R.png) no-repeat left top'
+      }).text('');
+    }
+    else{
+      $(this).css({
+        background: 'url(../../images/index/icon_Show-R.png) no-repeat left bottom'
+      }).text('');
+    }
+  });
+
+  $('.leftmenu').on('click', function(){
+    var leftPosition = $('.leftmenu').position().left;
+    if(leftPosition == 0){
+      $('.leftmenu, #menu-div').removeClass('hide').addClass('show');
+      
+    }
+    else{
+      $('.leftmenu, #menu-div').removeClass('show').addClass('hide');
+    }
+  });
+});

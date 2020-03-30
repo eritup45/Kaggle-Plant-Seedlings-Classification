@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)https://fgc.stpi.narl.org.tw/activity/videoDetail/4b1141305d9cd231015d9d0992ef0030 -->
+<html lang="zh-tw"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>科技大擂台</title>
+			<link href="./pytorch_tutorial_讚讚_files/bootstrap.min.css" rel="stylesheet">
+			<link href="./pytorch_tutorial_讚讚_files/layout.min.css" rel="stylesheet" type="text/css">
+			<link rel="icon" href="https://fgc.stpi.narl.org.tw/images/favicon.png" type="image/ico">
+			<!--[if lt IE 9]>
+				<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+			<script async="" src="./pytorch_tutorial_讚讚_files/analytics.js.下載"></script><script src="./pytorch_tutorial_讚讚_files/2566580483449467" async=""></script><script async="" src="./pytorch_tutorial_讚讚_files/fbevents.js.下載"></script><script type="text/javascript" async="" src="./pytorch_tutorial_讚讚_files/f.txt"></script><script async="" src="./pytorch_tutorial_讚讚_files/gtm.js.下載"></script><script type="text/javascript" src="./pytorch_tutorial_讚讚_files/jquery-1.12.0.min.js.下載"></script>
+			<!-- Client JavaScript -->
+			<script type="text/javascript" src="./pytorch_tutorial_讚讚_files/backtotop.js.下載"></script>
+			<script type="text/javascript" src="./pytorch_tutorial_讚讚_files/menu.js.下載"></script>
+			<script type="text/javascript" src="./pytorch_tutorial_讚讚_files/swip.js.下載"></script>
+			<script src="./pytorch_tutorial_讚讚_files/jquery.msgbox.min.js.下載"></script>
+			<script>
+				(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','dataLayer','GTM-MJNPH42');
+			</script>
+	<script src="./pytorch_tutorial_讚讚_files/f(1).txt"></script></head>
+
+	<body data-gr-c-s-loaded="true">
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJNPH42"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		
+
+
+
+
+
+  
+
+
+  
+  
+
+
+<h4 id="MENU"></h4>
+<div id="SUBMENU">
+	<ul>
+		<li><a href="https://fgc.stpi.narl.org.tw/index">首頁</a></li>
+		<li><a href="https://fgc.stpi.narl.org.tw/news">最新消息</a></li>
+		<li><a href="https://fgc.stpi.narl.org.tw/actList">活動列表</a></li>
+		<li><a href="https://fgc.stpi.narl.org.tw/contact">聯絡我們</a></li>		
+		<li><a href="https://fgc.stpi.narl.org.tw/map">網站導覽</a></li>
+		
+			
+			
+				<li><a href="https://fgc.stpi.narl.org.tw/login">會員登入</a></li>
+			
+		
+		<li><a target="_blank" href="https://www.facebook.com/FGCTW/">
+			<img style="width:50px;height:auto;margin: 0px 10px -18px 0px;" title="到FGC臉書" src="./pytorch_tutorial_讚讚_files/fb.png">
+		</a></li>
+	</ul>
+</div>
+
+<header class="inpage">
+<div id="hometop">
+	<!-- <div id="logo" class="inpage"><a href="/index"><img src="/images/index/LOGO.png"></a></div> -->
+	<div id="navgation" class="inpage">
+		<a href="https://fgc.stpi.narl.org.tw/index">首頁</a>
+		<a href="https://fgc.stpi.narl.org.tw/news">最新消息</a>
+		<a href="https://fgc.stpi.narl.org.tw/actList" class="click">活動列表</a>
+		<a href="https://fgc.stpi.narl.org.tw/contact">聯絡我們</a>
+		<a href="https://fgc.stpi.narl.org.tw/map">網站導覽</a>
+		
+			
+			
+				<a href="https://fgc.stpi.narl.org.tw/login">會員登入</a>
+			
+		
+		<a target="_blank" href="https://www.facebook.com/FGCTW/">
+			<img style="width:50px;height:auto;margin: 0px 10px -18px 0px;" title="到FGC臉書" src="./pytorch_tutorial_讚讚_files/fb.png">
+		</a>
+		<input style="height:40px;" id="keyword" name="keyword" type="text"><a id="site-search" class="searchicon"></a>
+	</div>
+	<div class="clear"></div>
+</div>
+</header>
+		
+
+
+
+
+
+  
+
+
+  
+  
+
+
+
+<h1 class="news"><b>教學文件</b></h1>
+<div id="path"><a href="https://fgc.stpi.narl.org.tw/index">首頁</a><b>&gt;</b><a href="https://fgc.stpi.narl.org.tw/activity/video/techai">教學文件</a><b>&gt;</b>PyTorch 基礎篇</div>
+<article class="inpage">
+<div id="eventTitle">PyTorch 基礎篇<span class="date">2017-08-01</span><a href="https://fgc.stpi.narl.org.tw/activity/video/techai" class="backhome">回索引頁</a></div>
+<div class="markdown-body container-fluid" id="doc">
+<style type="text/css">@import url(https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/github-gist.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+.markdown-body blockquote {
+    padding: 0 1em;
+    color: #777;
+    border-left: 0.25em solid #ddd;
+}
+.markdown-body a {
+  color: #337ab7;
+  text-decoration: underline;
+}
+.markdown-body a:hover,
+a:focus {
+  color: #23527c;
+}
+.markdown-body a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.markdown-body {
+    max-width: 1100px;
+}
+.markdown-body .alert{
+    padding: 10px;
+    margin: 10px auto;
+}
+.markdown-body b{
+    font-weight: 700;
+}
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+    color: #b8a680;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+    color: #000;
+    vertical-align: middle;
+    visibility: hidden;
+    border-bottom: 1px solid #eee;
+}
+.markdown-body h1 {
+    padding-bottom: 0.3em;
+    font-size: 2em;
+}
+.markdown-body h2 {
+    text-align: left;
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+    width: 100%;
+    font-weight: bold;
+    margin: 20px auto;
+    font-variant: small-caps;
+}
+.markdown-body h3 {
+    font-size: 1.25em;
+}
+.markdown-body h4 {
+    display: initial;
+    font-size: 1em;
+}
+.markdown-body h5 {
+    font-size: 0.875em;
+}
+.markdown-body h6 {
+    font-size: 0.85em;
+    color: #777
+}
+.markdown-body ul{
+    list-style-type: disc;
+}
+.markdown-body ul,
+.markdown-body ol {
+    padding-left: 2em
+}
+.markdown-body code,
+.markdown-body tt {
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 3px;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.markdown-body code::before,
+.markdown-body code::after,
+.markdown-body tt::before,
+.markdown-body tt::after {
+    letter-spacing: -0.2em;
+    content: "\A0";
+}
+.markdown-body code br,
+.markdown-body tt br {
+    display: none;
+}
+.markdown-body del code {
+    text-decoration: inherit;
+}
+.markdown-body pre {
+    word-wrap: normal;
+}
+.markdown-body pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+}
+.markdown-body .highlight {
+    margin-bottom: 16px;
+}
+.markdown-body .highlight pre {
+    word-break: normal;
+}
+.markdown-body .highlight pre,
+.markdown-body pre {
+    margin: 0 0 10px 0;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+}
+.markdown-body pre code,
+.markdown-body pre tt {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+}
+.markdown-body pre code::before,
+.markdown-body pre code::after,
+.markdown-body pre tt::before,
+.markdown-body pre tt::after {
+    content: normal;
+}
+.markdown-body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.markdown-body h1, h2, h3, h4, h5, h6{
+	font-family: cwTeXFangSong, sans-serif;
+}
+.markdown-body h1{
+    text-align: center
+}
+.markdown-body h4{
+    color: #666
+}
+.markdown-body blockquote{
+    font-size: 15px
+}
+.markdown-body table{
+    display: table;
+}
+#cases tr td{
+    border-width: 0;
+}
+#cases thead tr th{   
+    border-width: 0;
+    text-align: center;
+}
+.markdown-body img{
+    border: 1px solid #ddd;
+    text-align:center;
+    box-sizing: content-box;
+    position: relative;
+    display: block;
+    margin: 10px auto;
+	max-width: 90%;
+}
+table img{
+    margin:0;
+    padding: 0;
+}
+.list_wrapper ol{
+    list-style-type: lower-roman;
+}
+table{
+font-size: 14px;
+}
+.p-alert {
+    font-size: 20px;
+    color: red;
+}
+article.inpage p {
+    font-size: 19px;
+    margin: 10px 0;
+    word-break: normal;
+}
+</style>
+<p>大家好，今天要跟大家介紹PyTorch這個目前正在崛起的深度學習（Deep Learning）框架。深度學習的興起也不過是最近幾年的事情，在這短短時間便有非常多框架出現：TensorFlow、Theano、Keras、Caffe、Torch、PyTorch等等。然而就筆者自身經驗，相較於某些套件無可避免的在使用上與Python格格不入，或功能上受到框架封裝的限制，PyTorch這個以Python為優先考量的套件無疑是對研究者最友善的框架。</p>
+
+<div class="alert alert-info">
+<p>根據<a href="https://discuss.pytorch.org/t/pytorch-tutorial-for-deep-learning-researchers/1001/3" target="_blank">官方的回覆</a>，PyTorch是從torch-autograd, Chainer, LuaTorch-nn這些框架中尋找靈感的（也是其名稱的由來，但它其實已經跟原本的Torch差非常多了），然而它與Python完美結合的界面才是它為何能快速崛起的原因， 也是本文章的重點。</p>
+</div>
+
+<p>雖然作為一個深度學習框架的介紹，本文不假設讀者熟悉深度學習的原理。如果你想要先了解深度學習，可以參考台大電機系李宏毅教授的<a href="https://www.youtube.com/watch?v=Dr-WRlEFefw" target="_blank">教學影片</a>。然而，本文仍希望使用者</p>
+
+<ul>
+	<li>對矩陣運算有一定的認識</li>
+	<li>看得懂Python的程式，並能夠撰寫簡單的程式</li>
+	<li>曾經使用命令列(command line)</li>
+</ul>
+
+<h2 id="0-安裝">0. 安裝</h2>
+
+<p>安裝PyTorch非常簡單。首先，PyTorch只支援OSX和Linux！所以如果你是Windows的使用者，我們建議使用遠端操作的方式在Linux伺服器上來操作。另外，你還需要知道</p>
+
+<ol>
+	<li>電腦使用哪一種Python套件管理程式。如果你不知道要這是什麼，假定是pip。</li>
+	<li>你想使用哪一種Python版本。在命令行（command line）上打<code>python --version</code>可以得到Python的版本。</li>
+	<li>電腦上的CUDA是哪個版本的。沒有CUDA則無法使用GPU運算。</li>
+</ol>
+
+<p>接著，到PyTorch的<a href="http://pytorch.org/" target="_blank">官網</a>根據你電腦的環境選取對應的選項，然後照著網頁下方的指令輸入即可。</p>
+
+<p><img alt="" src="./pytorch_tutorial_讚讚_files/aGxuiEu.png"></p>
+
+<div class="alert alert-warning">
+<p>在本文的撰寫過程，PyTorch最新的版本是0.1.12，但是快更新到0.2版了，也許這會在操作上有一些微小的差異。</p>
+</div>
+
+<h2 id="1-tensor（張量）以及我們怎麼操作它">1. Tensor（張量）以及我們怎麼操作它</h2>
+
+<p>在機器學習與PyTorch的世界，Tensor代表一個多維的矩陣。Python世界裡廣泛使用的科學運算套件是<a href="http://www.numpy.org/" target="_blank">NumPy</a>。如果你使用過NumPy，PyTorch的矩陣操作可以說就是NumPy的GPU版本。這些工具可以讓我們自由的創造常數矩陣、加減乘除、轉置(transposing）、切片（slicing）等等想得到的操作都有。</p>
+
+<p>首先先引入所需的套件，然後我們來看看PyTorch常使用的tensor操作。還有非常多有用的操作請參考<a href="http://pytorch.org/docs/0.1.12/torch.html" target="_blank">說明文件（英文）</a>。</p>
+
+<pre><code class="python hljs"><span class="hljs-keyword">import</span> torch
+</code></pre>
+
+<div class="alert alert-warning">
+<p>請注意註解裡的維度都是從零開始的（0-based）。</p>
+</div>
+
+<h4 id="創造矩陣">創造矩陣</h4>
+
+<pre><code class="python hljs">torch.ones(<span class="hljs-number">5</span>, <span class="hljs-number">3</span>)    <span class="hljs-comment"># 創造一個填滿1的矩陣</span>
+torch.zeros(<span class="hljs-number">5</span>, <span class="hljs-number">3</span>)   <span class="hljs-comment"># 創造一個填滿0的矩陣</span>
+
+torch.eye(<span class="hljs-number">4</span>)        <span class="hljs-comment"># 創造一個4x4的單位矩陣</span>
+
+torch.rand(<span class="hljs-number">5</span>, <span class="hljs-number">3</span>)    <span class="hljs-comment"># 創造一個元素在[0,1)中隨機分佈的矩陣</span>
+torch.randn(<span class="hljs-number">5</span>, <span class="hljs-number">3</span>)   <span class="hljs-comment"># 創造一個元素從常態分佈(0, 1)隨機取值的矩陣</span>
+</code></pre>
+
+<h4 id="矩陣操作">矩陣操作</h4>
+
+<pre><code class="python hljs">torch.cat((m1, m2), <span class="hljs-number">1</span>)    <span class="hljs-comment"># 將m1和m2兩個矩陣在第一個維度合併起來</span>
+torch.stack((m1, m2), <span class="hljs-number">1</span>)  <span class="hljs-comment"># 將m1和m2兩個矩陣在新的維度（第一維）疊起來</span>
+
+m.squeeze(<span class="hljs-number">1</span>)              <span class="hljs-comment"># 如果m的第一維的長度是1，則合併這個維度，即</span>
+                          <span class="hljs-comment"># (A, 1, B) -&gt; (A, B)</span>
+m.unsqueeze(<span class="hljs-number">1</span>)            <span class="hljs-comment"># m的第一維多一個維度，即</span>
+                          <span class="hljs-comment"># (A, B) -&gt; (A, 1, B)</span>
+ 
+m1 + m2                   <span class="hljs-comment"># 矩陣element-wise相加，其他基本運算是一樣的</span>
+</code></pre>
+
+<h4 id="其他重要操作">其他重要操作</h4>
+
+<pre><code class="python hljs">m.view(<span class="hljs-number">5</span>, <span class="hljs-number">3</span>, <span class="hljs-number">-1</span>)    <span class="hljs-comment"># 如果m的元素個數是15的倍數，回傳一個大小為(5, 3, ?)的</span>
+                    <span class="hljs-comment"># tensor，問號會自動推算。tensor的資料是連動的。</span>
+m.expand(<span class="hljs-number">5</span>, <span class="hljs-number">3</span>)      <span class="hljs-comment"># 將m擴展到(5, 3)的大小</span>
+
+m.cuda()            <span class="hljs-comment"># 將m搬移到GPU來運算</span>
+m.cpu()             <span class="hljs-comment"># 將m搬移到CPU來運算</span>
+
+torch.from_numpy(n) <span class="hljs-comment"># 回傳一個tensor，其資料和numpy變數是連動的</span>
+m.numpy()           <span class="hljs-comment"># 回傳一個numpy變數，其資料和tensor是連動的</span>
+</code></pre>
+
+<h2 id="2-variable（變數）以及模型自動更新器">2. Variable（變數）以及模型自動更新器</h2>
+
+<p>能夠使用GPU進行矩陣運算並不足以讓PyTorch成為一個有用的深度學習套件。我們常常聽到人說「train一個model」，一個模型（model）代表著一系列的運算，將一個代表輸入（可能是文字、音訊、影像等任何你想的到的資料）的矩陣變成結果（可能是文字翻譯、影像辨識結果）的過程。而訓練（training）即是更新模型參數的過程。所有的深度學習套件都能夠讓我們寫程式來使用GPU達到這個目的；然而，使用PyTorch能夠讓我們的程式自然的符合Python簡單、清楚的風格。</p>
+
+<p>我們常常把一個模型看成是一個有向圖（directed graph），意思就是把輸入到輸出的運算過程畫成一個流程圖，其中的方向即代表資料的流向。下圖就是一個簡單的手寫數字辨識模型，圖片矩陣通過兩層維度為1024的layer之後能被辨識成數字。</p>
+
+<p><img alt="" src="./pytorch_tutorial_讚讚_files/hgxM3FY.png"></p>
+
+<p>所以究竟該怎麼訓練一個模型？首先，我們必須先了解誤差（loss）是什麼。誤差代表我們的模型預測出來的結果和真實情況的差距，通常是一個純量（scalar）。得到誤差後，我們通常使用梯度下降法（gradient descent），藉由反向傳播（backpropagation）來更新我們的模型。如果你不知道什麼是梯度下降和反向傳播，你可以想像是一個更新參數的方式，在更新的過程中，誤差將會從結果往資料流向相反的方向傳遞。我們並不是一次就能夠更新到最後的結果；相反的，我們每次只走了一小步（還不一定每次都是正確的方向）。不過我們希望，這些更新的累積能減少誤差，使我們的預測越來越接近真實結果。</p>
+
+<div class="alert alert-info">
+<p>如果你想要深入了解這部份的內容，李宏毅教授的<a href="https://www.youtube.com/watch?v=ibJpTrp5mcE" target="_blank">教學影片</a>有對於反向傳播的詳細講解。當你實作更進階的模型而需要利用<a href="http://pytorch.org/docs/master/autograd.html#torch.autograd.Function" target="_blank">Function物件</a>（本文不會詳細說明）定義自己的梯度公式時，你需要非常熟悉反向傳播的概念。</p>
+</div>
+
+<p>Variable是PyTorch這個套件的核心物件，我們更新模型的方式完全體現在它的設計中。它不僅用來儲存資料和模型中的變數，也可以直接用它來計算與儲存梯度（gradient）。以下就來說明如何使用Variable來建立一個最簡單的模型。</p>
+
+<h3 id="variable">Variable</h3>
+
+<p>一個Variable最重要的屬性（attribute）是<code>data</code>，它是一個Tensor物件，儲存這個變數現在的值。一個Variable的創建與使用方式長這個樣子：</p>
+
+<pre><code class="python hljs"><span class="hljs-keyword">import</span> torch
+<span class="hljs-keyword">from</span> torch.autograd <span class="hljs-keyword">import</span> Variable
+
+m1 = torch.ones(<span class="hljs-number">5</span>, <span class="hljs-number">3</span>)
+m2 = torch.ones(<span class="hljs-number">5</span>, <span class="hljs-number">3</span>)
+a = Variable(m1)
+b = Variable(m2)
+c = a + b
+</code></pre>
+
+<p>如果把<code>c</code>（或<code>c.data</code>）印出來，你會發現他是一個元素都是2的5x3矩陣。</p>
+
+<p>PyTorch做的非常好的一件事就是：幾乎所有前面介紹對Tensor的操作都可以用在Variable上！所以我們使用者只需要熟悉一種語法。然而，搭配前面對於有向圖的說明，大家必須了解到其背後所做的事情是<b>不一樣的</b>！Tensor的操作是單純的資料修改，沒有紀錄；而Variable的操作除了<code>data</code>的資料會有改動，所有的操作也會記錄下來變成一個有向圖，藉由<code>creator</code>這個屬性儲存起來。或許，這裡用一個動畫解釋最容易讓人了解。</p>
+
+<p><img alt="" src="./pytorch_tutorial_讚讚_files/S875FCA.gif"></p>
+
+<p>Variable還有兩個重要的屬性。</p>
+
+<ul>
+	<li>requires_grad<br>
+	指定要不要更新這個變數，對於不需要更新的變數可以把他設定成<code>False</code>，可以加快運算。</li>
+	<li>volatile<br>
+	指定需不需要保留紀錄用的變數。指定變數為<code>True</code>代表運算不需要記錄，可以加快運算。如果一個變數的volatile是<code>True</code>，則它的requires_grad一定是<code>False</code>。</li>
+</ul>
+
+<p>簡單來說，對於需要更新的Variable記得將<code>requires_grad</code>設成<code>True</code>，當只需要得到結果而不需要更新的Variable可以將<code>volatile</code>設成<code>True</code>加快運算速度。</p>
+
+<h3 id="autograd">Autograd</h3>
+
+<p>如同上面所說的，反向傳播是我們現在廣泛使用的更新模型方式。當我們定義了誤差如何計算的同時，其實也隱含定義了反向傳播的傳遞方向。這正是Autograd的運作原理：藉由前面所說的有向圖，PyTorch可以<b>自動</b>幫我們計算<b>梯度</b>。我們只要對於誤差的Variable物件呼叫<code>backward</code>函數，就可以把沿途所用到參數的gradient都計算出來，儲存在各個參數的<code>grad</code>屬性裡。最後，更新每個參數的<code>data</code>值。通常，我們使用優化器（optimizer）來更新它們。</p>
+
+<p>優化器的使用方法也非常簡單。首先在初始化優化器時提供被更新參數的清單。在每一次更新前，先呼叫優化器的<code>zero_grad</code><b>把上一次更新時用到的梯度歸零</b>（這一步很容易忘記。如果沒有做，<code>backward</code>得到的梯度會被累加）。接著，呼叫<code>backward</code>將參數的<code>grad</code>算出來後，再呼叫<code>step</code>利用儲存的<code>grad</code>和<code>data</code>來計算新的<code>data</code>的值。</p>
+
+<p>就讓我們延續上面的範例來解釋使用原理。</p>
+
+<pre><code class="python hljs"><span class="hljs-keyword">import</span> torch
+<span class="hljs-keyword">from</span> torch.autograd <span class="hljs-keyword">import</span> Variable
+<span class="hljs-keyword">from</span> torch.optim <span class="hljs-keyword">import</span> SGD
+
+m1 = torch.ones(<span class="hljs-number">5</span>, <span class="hljs-number">3</span>)
+m2 = torch.ones(<span class="hljs-number">5</span>, <span class="hljs-number">3</span>)
+
+<span class="hljs-comment"># 記得要將requires_grad設成True</span>
+a = Variable(m1, requires_grad=<span class="hljs-keyword">True</span>)
+b = Variable(m2, requires_grad=<span class="hljs-keyword">True</span>)
+
+<span class="hljs-comment"># 初始化優化器，使用SGD這個更新方式來更新a和b</span>
+optimizer = SGD([a, b], lr=<span class="hljs-number">0.1</span>)
+
+<span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> range(<span class="hljs-number">10</span>):        <span class="hljs-comment"># 我們示範更新10次</span>
+    loss = (a + b).sum()   <span class="hljs-comment"># 假設a + b就是我們的loss</span>
+
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()       <span class="hljs-comment"># 更新</span>
+</code></pre>
+
+<p>常用的優化器有非常多種：SGD、RMSprop、Adagrad、Adam等等，其中最基本的是SGD，代表Stochastic Gradient Descent。感謝PyTorch良好的架構，選擇不一樣的優化器不會對我們的模型有任何改變。事實上，我們只要將上面程式碼初始化優化器的<code>SGD</code>改變成其他優化器就可以了。不過，不同的優化器可能會因為不同的更新方式而造成最後得到的正確率不同，</p>
+
+<p>最後讓我們簡單重述更新的步驟：</p>
+
+<ol>
+	<li>操作現有的參數與輸入的變數，得到預測。利用預測和正確答案定義我們的誤差。</li>
+	<li>呼叫優化器的<code>zero_grad</code>將上次更新的梯度歸零。</li>
+	<li>呼叫誤差的<code>backward</code>算出所有參數的梯度。</li>
+	<li>呼叫優化器的<code>step</code>更新參數。</li>
+</ol>
+
+<p>從上面的例子可以看到，我們通常將這些步驟放在一個<code>for</code>迴圈裡，在訓練時更新數千萬次。</p>
+
+<h2 id="3-module（模組）以及它怎麼那麼簡單">3. Module（模組）以及它怎麼那麼簡單</h2>
+
+<p>Variable只不過是PyTorch裡建立模型的最小元件。深度學習的模型常常用一層一層的layer來作為變數操作的單位。Layer又是五花八門，常用的有Full-connected layer，Convolutional layer、Recurrent layer等等。每一種layer通常包含不只一個Variable的操作。Pytorch的模組可以把這些操作群組在一起。模組甚至可以包含其他模組，組成一個樹狀結構。如此一來，變數的建立與管理變得十分方便。事實上，我們通常把整個模型包裝成一個模組，這麼做尤其在儲存和載入模型的時候非常有用。</p>
+
+<div class="alert alert-info">
+<p><b>參數？變數？</b></p>
+
+<p>參數（Parameter）是變數（Variable）的子物件。意思是說，它們能做到的事情幾乎一模一樣。唯一的不同點是，因為Module會維護自己用到參數的集合，當我們將Parameter物件指定給模組的屬性時，它就會被記錄在這個集合裡，而且還會有一個唯一對應的名稱；Variable不會有這種效果。</p>
+
+<p>模組的套疊在這個邏輯也能正確的運作。例如說，子模組的參數也會自動變成父模組的參數。在下面的範例中，<code>nn.Conv2d</code>是個內建的模組，包含兩個參數<code>weight</code>和<code>bias</code>，正確的變成我們自訂模組的參數。</p>
+
+<pre><code class="python hljs"><span class="hljs-keyword">import</span> torch.nn <span class="hljs-keyword">as</span> nn
+<span class="hljs-keyword">import</span> torch.nn.functional <span class="hljs-keyword">as</span> F
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Model</span><span class="hljs-params">(nn.Module)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        super().__init__()
+        self.conv1 = nn.Conv2d(<span class="hljs-number">1</span>, <span class="hljs-number">20</span>, <span class="hljs-number">5</span>)    <span class="hljs-comment"># 註冊了conv1這個名字</span>
+        self.conv2 = nn.Conv2d(<span class="hljs-number">20</span>, <span class="hljs-number">20</span>, <span class="hljs-number">5</span>)   <span class="hljs-comment"># 註冊了conv2這個名字</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">forward</span><span class="hljs-params">(self, x)</span>:</span>
+       x = F.relu(self.conv1(x))
+       <span class="hljs-keyword">return</span> F.relu(self.conv2(x))
+       
+print(Model().parameters())    <span class="hljs-comment"># 會印出4個參數'conv1.weight', 'conv1.bias',</span>
+                               <span class="hljs-comment"># 'conv2.weight', 'conv2.bias'的值</span>
+</code></pre>
+
+<p>簡單來說，參數才是我們使用Module時候會面對到的物件，但一般來說這些差異都已經被包裝起來了，就如同上面的範例一樣。只有要從基礎開始自訂自己的Module的時候會需要小心這個差異。在整篇文章中，我們都有小心的使用這兩個不同的名稱。</p>
+</div>
+
+<p>那怎麼使用模組呢？一般來說，我們只需要定義模組創建的時候用到的參數，以及模組從輸入到輸出做了怎樣的操作。前者被定義在<code>__init__</code>函數裡，後者被定義在<code>forward</code>函數裡。讓我們再看一次上面的範例：</p>
+
+<pre><code class="python hljs"><span class="hljs-keyword">import</span> torch.nn <span class="hljs-keyword">as</span> nn
+<span class="hljs-keyword">import</span> torch.nn.functional <span class="hljs-keyword">as</span> F
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Model</span><span class="hljs-params">(nn.Module)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">"""
+        在__init__函數裡定義這個模組會用到的參數
+        """</span>
+        super().__init__()
+        self.conv1 = nn.Conv2d(<span class="hljs-number">1</span>, <span class="hljs-number">20</span>, <span class="hljs-number">5</span>)
+        self.conv2 = nn.Conv2d(<span class="hljs-number">20</span>, <span class="hljs-number">20</span>, <span class="hljs-number">5</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">forward</span><span class="hljs-params">(self, x)</span>:</span>
+       <span class="hljs-string">"""
+       在forward函數裡定義輸入和輸出值的關係
+       """</span>
+       x = F.relu(self.conv1(x))
+       <span class="hljs-keyword">return</span> F.relu(self.conv2(x))
+       
+<span class="hljs-comment"># 假設 _input是一個變數</span>
+model = Model()
+y = model(_input)    <span class="hljs-comment"># y就是我們模組的輸出</span>
+</code></pre>
+
+<p>一切就只有這麼簡單！你可以發現，PyTorch使用Python class來代表管理一群參數的單位，我們能夠用物件的屬性直接存取內部用到的參數，這樣的架構是非常直覺並符合語義（semantics）的。</p>
+
+<p>最後我們列舉幾個Module非常重要的功能：</p>
+
+<ul>
+	<li>
+	<p>將資料搬到CPU/GPU<br>
+	之前提過PyTorch支援GPU運算。Module可以讓我們一次把所有包含的變數一次搬到CPU/GPU。注意到<b>兩個Tensor的運算只能在同一個CPU/GPU上執行</b>，所以將所有變數一次搬移是個很重要的功能。呼叫<code>cpu()</code>和<code>cuda()</code>可以執行這個功能。另外，我們可以用<code>torch.cuda.is_available()</code>來檢查我們可不可以使用CUDA來運算。</p>
+
+	<pre><code class="python hljs">model = Model()
+<span class="hljs-keyword">if</span> torch.cuda.is_available():
+    model.cuda()
+</code></pre>
+	</li>
+	<li>
+	<p>訓練/運算模式<br>
+	有很多模組在訓練的時候和預測的時候用到同樣的參數，但是執行的運算不一樣，例如Dropout、Batch Normalization等。因此在訓練和運算的時候，<b>記得分別呼叫<code>train()</code>和<code>eval()</code>來切換模式。</b></p>
+
+	<p>一般來說，我們會分別用不同的函式來包裝訓練和預測的功能。所以一個典型的程式會長的像下面這個樣子。</p>
+
+	<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span><span class="hljs-params">(model, loader)</span>:</span>
+    model.train()
+    <span class="hljs-comment"># ...</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">evaluate</span><span class="hljs-params">(model, loader)</span>:</span>
+    model.eval()
+    <span class="hljs-comment"># ...</span>
+</code></pre>
+	</li>
+	<li>
+	<p>儲存/載入模型<br>
+	當我們訓練完一個模型，最重要的當然是把它儲存起來在日後使用。當我們呼叫<code>state_dict()</code>，會拿到一個參數名稱對應到值的字典，然後我們可以呼叫PyTorch的內建函式把它儲存起來。</p>
+
+	<pre><code class="python hljs">torch.save(model.state_dict(), PATH)
+</code></pre>
+
+	<p>日後要拿回來的時候，可以呼叫<code>load_state_dict</code>把值載入到對應的參數名稱。</p>
+
+	<pre><code class="python hljs">model.load_state_dict(torch.load(PATH))
+</code></pre>
+	</li>
+</ul>
+
+<h2 id="4-結論以及pytorch為什麼這麼好用">4. 結論以及PyTorch為什麼這麼好用</h2>
+
+<p>整篇文章中我們專注在解釋PyTorch中各個元件最基本的使用方法。最後就讓我們來談談PyTorch的特點。世界上並沒有最好的框架，只有最適合某個框架的使用情境。希望這裡的說明可以讓讀者能了解這些特性，進而選擇適合的框架。</p>
+
+<ul>
+	<li>
+	<p><b>與Python、NumPy的操作十分類似</b><br>
+	PyTorch中Tensor的使用方式就和NumPy差不多，與NumPy之間的轉換也是非常容易。不過就算沒有用過NumPy，也許你也能夠看出來Tensor的操作就和使用一個普通的Python變數沒有什麼差異。由於這些操作的方法有統一的規則，就算臨時忘記要用的功能，查閱說明文件很快就能夠找到。</p>
+	</li>
+	<li>
+	<p><b>動態建立模型</b><br>
+	上述利用autograd更新的過程揭露了PyTorch和TensorFlow、Theano等其他深度學習框架最不一樣的差異：PyTorch會動態的在每一次更新/計算結果的過程建立有向圖，每一行對Variable的操作都是建立模型的過程；其他框架會先編譯整個模型再開始更新/計算。也許有人會懷疑，每一次都要重新建立模型是否會讓運算速度變慢，但就我們的使用經驗是感覺不出來的。</p>
+
+	<p>這個動態建立有向圖的過程有兩個好處：</p>
+
+	<ul>
+		<li>當我們的模型有錯誤的時候，PyTorch會被迫中止在發生錯誤的地方，並立即回報錯誤原因。其他框架如Keras，因為需要靜態建立模型並呼叫<code>compile</code>，會在執行編譯時才回報錯誤的原因。要從錯誤的原因回推造成錯誤的程式碼不一定非常容易，這方面的差異大大的影響我們除錯的速度。</li>
+		<li>動態的建立模型代表我們能夠根據每一次的輸入來建立對應的模型，這點對於某些特殊的RNN模型特別有用，在TensorFlow這樣靜態建立模型的框架中是很難實踐的。
+		<div class="alert alert-info">
+		<p><b>PyTorch與靜態建立模型的框架（TensorFlow）比較</b><br>
+		如果你有使用過TensorFlow，這個段落的描述應該十分熟悉。對於Tensorflow，如果要根據輸入來判斷執行不同的運算，唯一的做法是針對每一種可能的操作都預先建立模型，再利用一個判斷的物件<code>tf.cond</code>來執行不同的操作，如下面的範例（改寫自<a href="https://stackoverflow.com/a/35833133" target="_blank">一篇StackOverflow的回答</a>）</p>
+
+		<pre><code class="python hljs">x = tf.placeholder(tf.float32, shape=[<span class="hljs-keyword">None</span>, <span class="hljs-number">20</span>], name=<span class="hljs-string">"x_input"</span>)
+condition = tf.placeholder(tf.int32, shape=[], name=<span class="hljs-string">"condition"</span>)
+W = tf.Variable(tf.zeros([<span class="hljs-number">20</span>, <span class="hljs-number">10</span>]), name=<span class="hljs-string">"weights"</span>)
+b = tf.Variable(tf.zeros([<span class="hljs-number">10</span>]), name=<span class="hljs-string">"bias"</span>)
+
+y = tf.cond(condition &gt; <span class="hljs-number">0</span>, 
+            <span class="hljs-keyword">lambda</span>: tf.matmul(x, W) + b,
+            <span class="hljs-keyword">lambda</span>: tf.matmul(x, W) - b)
+</code></pre>
+
+		<p>注意最後三行，對於<code>condition &gt; 0</code>的兩種操作都會在靜態建立模型時被執行到，而且必須被包裝成函式的型態（這裡使用<code>lambda</code>來建立匿名函式）。同樣的情況也出現在需要用到迴圈的模型。筆者認為這樣子的架構下寫出來的程式是十分迂迴，不符合直覺的。以下是PyTorch版本，因為是動態建立模型，直接使用一般的Python運算式。</p>
+
+		<pre><code class="python hljs">x = Variable(torch.randn(<span class="hljs-number">32</span>, <span class="hljs-number">20</span>), requires_grad=<span class="hljs-keyword">True</span>)
+W = Variable(torch.zeros(<span class="hljs-number">20</span>, <span class="hljs-number">10</span>), requires_grad=<span class="hljs-keyword">True</span>)
+b = Variable(torch.zeros(<span class="hljs-number">10</span>), requires_grad=<span class="hljs-keyword">True</span>)
+
+y = x.mm(W)
+       
+<span class="hljs-keyword">if</span> condition &gt; <span class="hljs-number">0</span>:
+    y = y + b.expand_as(y)
+<span class="hljs-keyword">else</span>:
+    y = y - b.expand_as(y)
+</code></pre>
+		</div>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p><b>模組與Python物件的對應</b><br>
+	PyTorch巧妙的將Module物件與Python中的class對應。模組中的參數會對應到Python物件的屬性，而子模組的參數自動變成父模組的參數。這些特性讓我們很容易取得和修改某個參數的值。相較於Tensorflow使用虛擬的命名空間（variable_scope與name_scope）來管理參數，這個方式比較接近Python處理物件的方式，變數的共用也更容易。</p>
+	</li>
+</ul>
+
+<p>PyTorch相較其他框架還不夠成熟，在這篇文章完成時也不過邁向0.2版，文件也沒有其他大型框架多元，不過本身的架構非常容易上手，是其他框架無法比擬的。希望這篇文章能夠成為了解PyTorch的第一步，在接下來的教學文章中，會有真實建立一個模型與如何訓練的詳細說明。</p>
+
+<blockquote>
+<p>作者：台大電機所碩二 陳奕安 <a href="mailto:r05921035@ntu.edu.tw" target="_blank"><i class="fa fa-envelope-o"><span style="display: none;">_</span></i></a></p>
+</blockquote>
+</div>
+
+</article>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","2566580483449467");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2566580483449467&amp;ev=PageView&amp;noscript=1"></noscript>
+
+		
+		<footer>
+			<div id="topBackupArea"></div>
+			<ul class="unit">
+				<li><b>指導單位│</b><a href="https://www.most.gov.tw/" target="_blank"><img src="./pytorch_tutorial_讚讚_files/sLOGO-01.png"></a></li><li><b>執行單位│</b><a href="https://www.stpi.narl.org.tw/index.htm" target="_blank"><img src="./pytorch_tutorial_讚讚_files/sLOGO-02.png"></a></li>
+				<li>
+					<a target="_blank" href="http://www.facebook.com/share.php?u=https://fgc.stpi.narl.org.tw/index">
+						<img style="width:50px;height:auto" title="分享到臉書" src="./pytorch_tutorial_讚讚_files/fb.png">
+					</a>
+				</li>
+				<div class="clear"></div>
+			</ul>
+			<!--  <a href="/index"><img src="/images/index/LOGO.png" class="logoS"></a> -->
+			<b>請用 IE 10 以上版本瀏覽 最佳觀看解析度 1360x768<br>
+			©財團法人國家實驗研究院科技政策研究與資訊中心 2019 All Rights Reserved..<br>
+			10622 台北市和平東路二段106號&nbsp;&nbsp;&nbsp;&nbsp;電話:(02) 2737-7694<br>
+			<a href="https://fgc.stpi.narl.org.tw/privacy">隱私權宣告及資訊安全政策</a></b>
+		</footer>
+		
+		<script>
+		$(function(){
+			$('#site-search').on('click',function(e){
+				location.href="https://www.google.com.tw/search?q="+$("#keyword").val()+"&sitesearch=https://fgc.stpi.narl.org.tw";
+			});
+		});
+		
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-103397914-1', 'auto');
+		  ga('send', 'pageview');
+		
+		</script>
+
+	
+
+</body></html>

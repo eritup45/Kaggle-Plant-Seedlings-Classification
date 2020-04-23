@@ -40,9 +40,10 @@ python main.py [--path] [--pretrained_model_path] [--epochs] [--batch_size] [--l
 # pretrained model name is in "./final-0.93-best_train_acc.pth"
 python main.py --path ./ --pretrained_model_path ./model-0.93-best_train_acc.pth 
 ```
+![](https://i.imgur.com/y2POxRz.png)
 
 ## 整體架構
-> Written by書賀
+> Written by Fan
 
 1. DataSet 讀取要用到的資料集
 2. DataLoader 將當前要使用到的資料讀進來

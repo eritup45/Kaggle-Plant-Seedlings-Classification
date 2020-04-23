@@ -1,4 +1,4 @@
-# Plant Seed
+# Kaggle-Plant-Seedlings-Classification
 ###### tags: `程式` `自學`
 
 The objective is to train a Resnet18 model to classify plants from a picture.

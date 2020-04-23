@@ -40,6 +40,7 @@ python main.py [--path] [--pretrained_model_path] [--epochs] [--batch_size] [--l
 # pretrained model name is in "./final-0.93-best_train_acc.pth"
 python main.py --path ./ --pretrained_model_path ./model-0.93-best_train_acc.pth 
 ```
+### 準確率
 ![](https://i.imgur.com/y2POxRz.png)
 
 ## 整體架構
